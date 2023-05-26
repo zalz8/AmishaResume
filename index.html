@@ -1,0 +1,294 @@
+<html>
+    <head>
+        <title>my works</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Lato", sans-serif;
+            }
+
+            body,
+            html {
+                height: 100%;
+                color: #777;
+                line-height: 1.8;
+            }
+
+            /* Create a Parallax Effect */
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* First image (Logo. Full height) */
+            .bgimg-1 {
+                background-image: url('indigo.jpg');
+            ;
+            }
+
+            /* Second image (Portfolio) */
+            .bgimg-2 {
+                background-image: url("ajrak.jpg");
+                min-height: 400px;
+            }
+
+            /* Third image (Contact) */
+            .bgimg-3 {
+                background-image: url("IMG_3242.JPG");
+                min-height: 400px;
+            }
+
+            .w3-wide {
+                letter-spacing: 10px;
+            }
+
+            .w3-hover-opacity {
+                cursor: pointer;
+            }
+
+            /* Turn off parallax scrolling for tablets and phones */
+            @media only screen and (max-device-width: 1600px) {
+
+                .bgimg-1,
+                .bgimg-2,
+                .bgimg-3 {
+                    background-attachment: scroll;
+                    min-height: 400px;
+                }
+            }
+        </style>
+    </head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Amisha <span
+                    class="w3-hide-small">Behl</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+                <p>As a UX/UI designer with experience working for two companies, I possess a diverse range of skills that make me a valuable asset to any design team. I am  proficient in , Figma and I am still learning  After Effects,HTML ,CSS, Javascript allowing me to create visually stunning designs with ease. My ability to understand user needs and translate them into intuitive, user-friendly interfaces is a key strength that sets me apart from others in my field. With my attention to detail and passion for delivering exceptional user experiences, I am confident in my ability to bring a unique perspective to any design project.</p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+             
+                <img src="IMG_3242.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+                    width="500" height="333">
+            </div>
+            <section id="work-experience">
+                <h2>Work Experience</h2>
+                <div class="work-entry">
+                  <div class="work-left">
+                    <img src="Screenshot 2023-04-29 193445.png" alt="Company Logo">
+                    <h3>Reserve Bank of India</h3>
+                    <p class="work-dates">October - December 2021 </p>
+                  </div>
+                  <div class="work-right">
+                    <h4>UX Researcher </h4>
+                    <p>In 2022, I had the opportunity to work with the Reserve Bank of India as a UX researcher. During my time there, I was tasked with working on a project that involved conducting a comparative analysis of India's leading mobile banking apps. This project was particularly interesting, as it involved examining the user experience of each app and identifying areas for improvement. Through this project, I was able to gain valuable insights into the needs and preferences of mobile banking users in India, and provide recommendations to help improve the overall user experience of these apps. Working with the Reserve Bank of India was a great experience, and I am proud to have been a part of such an important project.</p>
+                  </div>
+                </div>
+              </section>
+
+            
+      
+    </div><!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">MY WORK</h3>
+        <p class="w3-center"><em>Here are some of my latest projects<br> You can click on the images to make
+                them bigger, along with a breif about each project</em></p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="final prototype.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt=" The problem is that the students are not engaging in studios and in their own learning. Its not only the uninterested students but also the studio structures. aim of this project is to design and develop a mobile app that encourages students to attend classes regularly by providing an engaging and fun learning experience. The problem we are addressing is the lack of interest among students to attend classes, which leads to them bunking classes frequently. The app will be designed to motivate students to attend classes, improve their learning experience, and track their attendance.
+                    ">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="passengers2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="I recently completed a project centered around the movie Passengers. For this project, I conducted user research and empathy mapping exercises to better understand the needs and wants of movie-goers. I also utilized various UX tools, such as personas, user flows, and wireframes, to develop a robotic interface that enhanced the movie-watching experience..
+
+                    ">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="Passport2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt=" I had the opportunity to work on my first project which involved redesigning the Indian passport app using Figma. The project was challenging yet exciting, as it required me to incorporate user-centered design principles into my work. As a UX designer, my goal was to create a user-friendly and visually appealing interface that catered to the needs of Indian passport holders. Using Figma, I was able to create wireframes and high-fidelity prototypes that helped me to visualize and test different design ideas.">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="Screenshot 2023-04-14 094818.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="I recently created a game using Scratch, a programming language designed for children to learn coding concepts. I recently created a game using Scratch, a programming language designed for children to learn coding concepts. The game, titled (Anna's Balloon Adventure) features a main character named Anna who can be moved up and down using the arrow keys. The player must use the spacebar to shoot balloons from Anna's hands, with the goal of popping all the balloons before the time runs out. The game incorporates fun visuals, including colorful balloons and cute sound effects, making it engaging for players of all ages. By using Scratch, I was able to learn coding concepts while also exercising my creativity and imagination. Overall, creating (Anna's Balloon Adventure) was a fun and rewarding experience that allowed me to develop my skills as a game developer..">
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img src="swiggyy.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="I recently had the opportunity to work on my first project which involved redesigning the SWIGGY app using Figma. The project was challenging yet exciting, as it required me to incorporate user-centered design principles into my work.In this Project we had to make wireframes and redesign the app and make it innconvinient for the users">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="anaka.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="I had the opportunity to design a website about skincare using HTML and CSS. The website was designed to showcase various skincare products, as well as provide information on skincare routines and tips. To ensure that the website met the needs of users, I utilized Figma to create wireframe prototypes. This allowed me to visualize and test different design ideas before implementing them in HTML and CSS. I also incorporated responsive design principles to ensure that the website was optimized for various screen sizes, including desktop and mobile devices. By utilizing my skills in HTML, CSS, and Figma, I was able to create a user-friendly and visually appealing website that provided valuable information to users interested in skincare. Overall, the project was a great learning experience and allowed me to further develop my skills in web design and development..">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="sresearch2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Swiggy ux resesearch">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="sreasearch1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ux Research">
+            </div>
+           
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+     <!-- Container (About SchoolSection) -->
+     <div class="w3-content w3-container w3-padding-64" id="about">
+        
+         
+            </div>
+            <section id="work-experience">
+                <h2>EDUCATION</h2>
+                <div class="work-entry">
+                  <div class="work-left">
+                    <img src="srishti-institute-logo.png" alt="Company Logo">
+
+                    <h2>Bachelors in User Interface and Interaction engineering.</h2>
+                    <h3>Srishti Manipal Institute of Art , Design and Technology</h3>
+                    <p>1st year - completed</p>
+                                      </div>
+                  <div class="work-right">
+                    
+                    <p>SCHOOL -Scottish High Internation School - ISCE (94.5%)</p>
+                  </div>
+                </div>
+              </section>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">Contact me</h3>
+        <p class="w3-center"><em>Would love to hear from you!</em></p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Delhi,India<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91
+                    8287470465<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+                    aamishabehl@gmail.com<br>
+                </div>
+                                  </div>
+        </div>
+    </div>
+
+   
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+       <P>PS:This website is coded by me!</P>
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
